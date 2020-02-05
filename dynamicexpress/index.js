@@ -3,8 +3,9 @@ const App = Express();
 const port = 80;
 
 const Person = require("./Person.js");
-let people = [];
 const faker = require('faker');
+
+let people = [];
 
 for(let i = 0; i < 99; i++)
 {
@@ -25,12 +26,24 @@ App.get("/person/name/:name", (req, res) => {
 });
 
 App.get("/person/color/:color", (req, res) => {
+
+    let result = {"error": "Could not find!"};
+
     people.forEach((value) => {
         if(value.color == req.params.color) {
-            res.send(value);
+            result = value;
         }
     });
-    res.send("Hmmmm");
+
+    if(result.error) {
+        //In red
+        console.log(req.path)
+    } else {
+        //In green
+        console.log(req.path)
+    }
+
+    res.send(result);
     
 });
 
