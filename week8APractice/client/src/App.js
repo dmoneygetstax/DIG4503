@@ -1,35 +1,35 @@
 import React from 'react';
+import NameSearch from './components/NameSearch';
+import TableOne from './components/TableOne';
 
 class App extends React.Component {
+  
+  constructor(props) {
+    super(props);
 
-  movieSearch() {
+    this.state = {
+      "table": []
+    };
 
-    let inputElement = document.querySelector("#movieInput");
+  }
 
-    let inputValue = inputElement.value;
+  exampleFunction = (results) => {
 
-    if(inputValue.length === 0) {
-      inputValue = "~";
-    }
-
-    fetch("http://localhost:80/movies/title" + inputElement.value)
-    .then((response) => {return response.json(); })
-    .then((processed) => {
-      console.log(processed);
+    this.setState({
+      "table": results
     });
 
   }
 
   render() {
-
-  return (
-    <div>
-      <input type="text" id="" onKeyUp={} />
-    </div>
-  );
-
+    return (
+      <div>
+        <h2>Search:</h2>
+      <NameSearch callback={this.exampleFunction}/>
+      <TableOne table={this.state.table} />
+      </div>
+    )
   }
-
 
 }
 

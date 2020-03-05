@@ -22,7 +22,7 @@ MongoClient.connect(URL, (error, connection) => {
 const CORS = require('cors');
 App.use(CORS());
 
-App.get("/movies/title/:title/", (req, res) => {
+App.get("/movies/title/:title", (req, res) => {
     let result = {"error": "Could not find movies!"};
 
     if(collection != null) {
@@ -32,10 +32,10 @@ App.get("/movies/title/:title/", (req, res) => {
         .toArray()
         .then((cursorArray) => {
 
-            if (cursorArray != 0) {
+            if(cursorArray.length != 0) {
                 result = cursorArray;
             }
-
+          
             res.json(result);
 
         });
@@ -45,7 +45,6 @@ App.get("/movies/title/:title/", (req, res) => {
         res.json(result);
 
     }
-
 
 });
 
