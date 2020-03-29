@@ -8,7 +8,7 @@ class IdSearch extends React.Component {
         // Find the element with 'id="id"'
         let element = document.querySelector("#id");
 
-        fetch("/api/pokemon/id/" + element.value)
+        fetch("/api/pokemon/ids/" + element.value)
         .then((res) => {
             // Parse the string into a JavaScript object and return it
             return res.json();

@@ -13,26 +13,26 @@ const Type = () => {
           Search for a Pokemon by type! Catch 'em all!
         </p>
         <p>
-        <Link href="/name/[name]">
+        <Link href="/name">
           <a>Search by name</a>
         </Link>
         </p>
         <p>
-        <Link href="/id/[id]">
+        <Link href="/id">
           <a>Search by id</a>
         </Link>
         </p>
         <p>
-        <Link href="../index">
+        <Link href="/index">
           <a>Return home</a>
         </Link>
         </p>
       </div>
       <div>
-    <TypeSearch />
-    <h2>Reporting</h2>
-    <div id="reportingArea"></div>
-  </div>
+          <TypeSearch />
+          <h2>Reporting</h2>
+            <div id="reportingArea"></div>
+      </div>
     </div>
   );
 }

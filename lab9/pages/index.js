@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Link from 'next/link';
-//import styles from "../components/StyleComponent/SyleComponents.module.css";
 
 const Home = () => {
   return (
@@ -9,23 +8,22 @@ const Home = () => {
         <title>This is the homepage!</title>
       </Head>
       <div>
-        <p //className={styles.styles} id="styles"
-        >
+        <p>
           Find a Pokemon! Catch 'em all!
         </p>
         <p>
-        <Link href="/api/pokemon/name/names">
-          <a>Search by Name</a>
+        <Link href="/name">
+          <a>Search by name</a>
         </Link>
         </p>
         <p>
-        <Link href="/api/pokemon/id/[id]">
-          <a>Search by Id</a>
+        <Link href="/id">
+          <a>Search by id</a>
         </Link>
         </p>
         <p>
-        <Link href="/api/pokemon/type/[type]">
-          <a>Search by Type</a>
+        <Link href="/type">
+          <a>Search by type</a>
         </Link>
         </p>
       </div>

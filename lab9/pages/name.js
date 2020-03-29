@@ -13,26 +13,26 @@ const Name = () => {
           Search for a Pokemon by name! Catch 'em all!
         </p>
         <p>
-        <Link href="/id/[id]">
+        <Link href="/id">
           <a>Search by id</a>
         </Link>
         </p>
         <p>
-        <Link href="/type/[type]">
+        <Link href="/type">
           <a>Search by type</a>
         </Link>
         </p>
         <p>
-        <Link href="../index">
+        <Link href="/index">
           <a>Return home</a>
         </Link>
         </p>
       </div>
       <div>
-        <NameSearch />
-        <h2>Reporting</h2>
-        <div id="reportingArea"></div>
-        </div>
+          <NameSearch />
+          <h2>Reporting</h2>
+            <div id="reportingArea"></div>
+      </div>
     </div>
   );
 }

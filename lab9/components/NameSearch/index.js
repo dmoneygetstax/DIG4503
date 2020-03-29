@@ -8,7 +8,7 @@ class NameSearch extends React.Component {
         // Find the element with 'id="name"'
         let element = document.querySelector("#name");
 
-        fetch("/api/pokemon/name/" + element.value)
+        fetch("/api/pokemon/names/" + element.value)
         .then((res) => {
             // Parse the string into a JavaScript object and return it
             return res.json();

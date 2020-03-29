@@ -8,7 +8,7 @@ class TypeSearch extends React.Component {
         // Find the element with 'type="type"'
         let element = document.querySelector("#type");
 
-        fetch("/api/pokemon/type/" + element.value)
+        fetch("/api/pokemon/types/" + element.value)
         .then((res) => {
             // Parse the string into a JavaScript object and return it
             return res.json();
