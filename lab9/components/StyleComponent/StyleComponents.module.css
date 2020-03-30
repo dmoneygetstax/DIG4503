@@ -1,8 +1,0 @@
-.example {
-    font: italic 16px cursive;
-  }
-  /* The following is not applied. */
-  /* It is an ID selector and CSS Modules does not understand them. */
-  .example {
-    color: red;
-  }

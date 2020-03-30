@@ -1,0 +1,11 @@
+.fontItalic {
+    font: italic 16px cursive;
+  }
+  
+.colorRed {
+    color: red;
+  }
+
+.pikachuBackgroundImage {
+  background: url('../../.next/static/media/pikachu.png');
+  }

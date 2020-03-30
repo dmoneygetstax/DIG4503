@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import styles from '../components/StyleComponent/StyleComponent.module.css'
 
 const Home = () => {
   return (
@@ -8,7 +9,7 @@ const Home = () => {
         <title>This is the homepage!</title>
       </Head>
       <div>
-        <p>
+        <p className={styles.colorRed}>
           Find a Pokemon! Catch 'em all!
         </p>
         <p>
@@ -27,6 +28,10 @@ const Home = () => {
         </Link>
         </p>
       </div>
+      <div>
+        <p className={styles.pikachuBackgroundImage}>
+          </p>
+        </div>
     </div>
   );
 }
