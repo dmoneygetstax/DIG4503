@@ -9,7 +9,7 @@ const Home = () => {
         <title>This is the homepage!</title>
       </Head>
       <div>
-        <p className={styles.colorRed}>
+        <p className={styles.body}>
           Find a Pokemon! Catch 'em all!
         </p>
         <p>
