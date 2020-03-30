@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import TypeSearch from '../components/TypeSearch';
+import styles from '../components/StyleComponent/StyleComponent.module.css'
 
 const Type = () => {
   return (
@@ -9,8 +10,8 @@ const Type = () => {
         <title>Type Search</title>
       </Head>
       <div>
-        <p>
-          Search for a Pokemon by type! Catch 'em all!
+        <p className={styles.body}>
+          Search for a Pokemon by type!
         </p>
         <p>
         <Link href="/name">

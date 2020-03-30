@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import IdSearch from '../components/IdSearch';
+import styles from '../components/StyleComponent/StyleComponent.module.css'
 
 const Id = () => {
   return (
@@ -9,8 +10,8 @@ const Id = () => {
         <title>Id Search</title>
       </Head>
       <div>
-        <p>
-          Search for a Pokemon by id! Catch 'em all!
+        <p className={styles.body}>
+          Search for a Pokemon by id!
         </p>
         <p>
         <Link href="/name">

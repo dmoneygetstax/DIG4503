@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import NameSearch from '../components/NameSearch';
+import styles from '../components/StyleComponent/StyleComponent.module.css'
 
 const Name = () => {
   return (
@@ -9,8 +10,8 @@ const Name = () => {
         <title>Name Search</title>
       </Head>
       <div>
-        <p>
-          Search for a Pokemon by name! Catch 'em all!
+        <p className={styles.body}>
+          Search for a Pokemon by name!
         </p>
         <p>
         <Link href="/id">
