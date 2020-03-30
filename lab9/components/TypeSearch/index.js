@@ -1,3 +1,5 @@
+import styles from '../StyleComponent/StyleComponent.module.css'
+
 class TypeSearch extends React.Component {
 
     readType(event) {
@@ -33,7 +35,7 @@ class TypeSearch extends React.Component {
     render() {
         return(
             <div>
-                 <h2>Type</h2>
+                 <h2 className={styles.linkText}>Enter a Type</h2>
                  <form onSubmit={this.readType}>
                     <input id="type" type="text" />
                     <button>I choose you!</button>

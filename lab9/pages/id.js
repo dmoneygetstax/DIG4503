@@ -15,23 +15,23 @@ const Id = () => {
         </p>
         <p>
         <Link href="/name">
-          <a className={styles.linkText}>Search by name</a>
+          <a className={styles.linkText}>▶ Search by name</a>
         </Link>
         </p>
         <p>
         <Link href="/type">
-          <a className={styles.linkText}>Search by type</a>
+          <a className={styles.linkText}>▶ Search by type</a>
         </Link>
         </p>
         <p>
         <Link href="/index">
-          <a className={styles.linkText}>Return home</a>
+          <a className={styles.linkText}>▶ Return home</a>
         </Link>
         </p>
       </div>
       <div>
           <IdSearch />
-          <h2>Reporting</h2>
+          <h2 className={styles.linkText}>Reporting</h2>
             <div id="reportingArea"></div>
       </div>
     </div>

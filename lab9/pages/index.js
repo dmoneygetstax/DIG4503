@@ -10,21 +10,21 @@ const Home = () => {
       </Head>
       <div>
         <p className={styles.body}>
-          Find a Pokemon! Catch 'em all!
+          What will you do?
         </p>
         <p>
         <Link href="/name">
-          <a className={styles.linkText}>Search by name</a>
+          <a className={styles.linkText}>▶ Search by name</a>
         </Link>
         </p>
         <p>
         <Link href="/id">
-          <a className={styles.linkText}>Search by id</a>
+          <a className={styles.linkText}>▶ Search by id</a>
         </Link>
         </p>
         <p>
         <Link href="/type">
-          <a className={styles.linkText}>Search by type</a>
+          <a className={styles.linkText}>▶ Search by type</a>
         </Link>
         </p>
       </div>

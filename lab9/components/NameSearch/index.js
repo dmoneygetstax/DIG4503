@@ -1,3 +1,5 @@
+import styles from '../StyleComponent/StyleComponent.module.css'
+
 class NameSearch extends React.Component {
 
     readName(event) {
@@ -33,7 +35,7 @@ class NameSearch extends React.Component {
     render() {
         return(
             <div>
-                 <h2>Name</h2>
+                 <h2 className={styles.linkText}>Enter a Name</h2>
                  <form onSubmit={this.readName}>
                     <input id="name" type="text" />
                     <button>Submit</button>
