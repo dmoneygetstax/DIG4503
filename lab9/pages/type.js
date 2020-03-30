@@ -15,17 +15,17 @@ const Type = () => {
         </p>
         <p>
         <Link href="/name">
-          <a>Search by name</a>
+          <a className={styles.linkText}>Search by name</a>
         </Link>
         </p>
         <p>
         <Link href="/id">
-          <a>Search by id</a>
+          <a className={styles.linkText}>Search by id</a>
         </Link>
         </p>
         <p>
         <Link href="/index">
-          <a>Return home</a>
+          <a className={styles.linkText}>Return home</a>
         </Link>
         </p>
       </div>
