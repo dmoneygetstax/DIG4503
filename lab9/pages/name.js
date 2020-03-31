@@ -10,30 +10,38 @@ const Name = () => {
         <title>Name Search</title>
       </Head>
       <div>
+        <img className={styles.img} width="300" height="300" src="mankey.png" />
+        <img className={styles.imgTrainer} width="500" height="500" src="trainer.png" />
         <p className={styles.body}>
           Search for a Pokemon by name!
         </p>
-        <p>
-        <Link href="/id">
+
+        <div className={styles.container}>
+
+          <div className={styles.box}>
+          <Link href="/id">
           <a className={styles.linkText}>▶ Search by id</a>
-        </Link>
-        </p>
-        <p>
-        <Link href="/type">
+          </Link>
+        </div>
+          <div className={styles.box}>
+          <Link href="/type">
           <a className={styles.linkText}>▶ Search by type</a>
-        </Link>
-        </p>
-        <p>
-        <Link href="/index">
+          </Link>
+          </div>
+          <div className={styles.box}>
+          <Link href="/index">
           <a className={styles.linkText}>▶ Return home</a>
-        </Link>
-        </p>
+          </Link>
+        </div>
+
       </div>
+        
       <div>
           <NameSearch />
-          <h2 className={styles.linkText}>Reporting</h2>
-            <div id="reportingArea"></div>
+          <h2 className={styles.reportingArea}>Reporting</h2>
+            <div id="reportingArea" className={styles.linkText}></div>
       </div>
+    </div>
     </div>
   );
 }

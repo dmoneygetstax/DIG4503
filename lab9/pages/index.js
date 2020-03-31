@@ -9,29 +9,32 @@ const Home = () => {
         <title>This is the homepage!</title>
       </Head>
       <div>
+        <img className={styles.img} width="300" height="300" src="pikachu.png" />
+        <img className={styles.imgTrainer} width="500" height="500" src="trainer.png" />
         <p className={styles.body}>
           What will you do?
         </p>
-        <p>
-        <Link href="/name">
+
+        <div className={styles.container}>
+
+          <div className={styles.box}>
+          <Link href="/name">
           <a className={styles.linkText}>▶ Search by name</a>
-        </Link>
-        </p>
-        <p>
-        <Link href="/id">
-          <a className={styles.linkText}>▶ Search by id</a>
-        </Link>
-        </p>
-        <p>
-        <Link href="/type">
-          <a className={styles.linkText}>▶ Search by type</a>
-        </Link>
-        </p>
-      </div>
-      <div>
-        <p className={styles.pikachuBackgroundImage}>
-          </p>
+          </Link>
         </div>
+          <div className={styles.box}>
+          <Link href="/id">
+          <a className={styles.linkText}>▶ Search by id</a>
+          </Link>
+          </div>
+          <div className={styles.box}>
+          <Link href="/type">
+          <a className={styles.linkText}>▶ Search by type</a>
+          </Link>
+        </div>
+
+      </div>
+    </div>
     </div>
   );
 }

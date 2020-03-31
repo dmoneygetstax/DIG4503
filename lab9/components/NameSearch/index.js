@@ -34,11 +34,11 @@ class NameSearch extends React.Component {
 
     render() {
         return(
-            <div>
+            <div className={styles.search}>
                  <h2 className={styles.linkText}>Enter a Name</h2>
                  <form onSubmit={this.readName}>
                     <input id="name" type="text" />
-                    <button>Submit</button>
+                    <button className={styles.button}>I choose you!</button>
                 </form>
             </div>
         );
