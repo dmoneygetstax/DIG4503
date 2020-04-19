@@ -6,6 +6,7 @@ const App = Express();
 const port = 80;
 // Require cors
 const cors = require('cors');
+
 // Setup cors as a middleware BEFORE any other routes!
 App.use(cors());
 

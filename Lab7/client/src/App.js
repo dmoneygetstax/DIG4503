@@ -1,5 +1,7 @@
 import React from 'react';
 import YearSearch from './components/YearSearch';
+import TitleSearch from './components/TitleSearch';
+import styles from './styles.module.css';
 
 class App extends React.Component {
 
@@ -22,7 +24,7 @@ class App extends React.Component {
   createResultsTable() {
 
     return (
-      <table>
+      <table className={styles.table}>
         <tbody>
         {
           this.state.table.map((entry, index) => {
@@ -44,11 +46,15 @@ class App extends React.Component {
     return (
       <div>
         <YearSearch callback={this.setResultsTable} />
+        <TitleSearch callback={this.setResultsTable} />
+        <img className={styles.img} src="home_alone.png" />
         {this.createResultsTable()}
       </div>
     );
   }
+
   
 }
+
 
 export default App;

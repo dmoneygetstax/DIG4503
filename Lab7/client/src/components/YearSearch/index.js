@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from '../../styles.module.css'
+
 class YearSearch extends React.Component {
 
     yearSearchFormSubmit = () => {
@@ -26,10 +28,11 @@ class YearSearch extends React.Component {
     render() {
         return(
             <div>
-                <h2>Search for Movies by their Year:</h2>
-                <input 
+                <h2 className={styles.searchText}>Search for Movies by Year:</h2>
+                <input className={styles.inputBox}
                     type="text" 
                     id="yearSearch" 
+                    placeholder ="2020"
                     onKeyUp={this.yearSearchFormSubmit} 
                 />
             </div>
