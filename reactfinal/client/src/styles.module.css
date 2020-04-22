@@ -1,0 +1,45 @@
+.searchText {
+    padding-left: 50px;
+    padding-top: 50px;
+    font-family: 'Apercu';
+    font-size: 50px;
+    color: grey;
+}
+
+.inputBox {
+    font-family: 'Apercu';
+    color: grey;
+    font-size: 20px;
+    height: 50px;
+    margin-left: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+input::placeholder {
+    color: #ccc;
+}
+
+input:focus::placeholder {
+    color: transparent;
+  }
+
+.table {
+    color: grey;
+    padding: 50px;
+    width: 40%;
+    font-family: 'Apercu';
+    font-size: 20px;
+}
+
+.img {
+    float: right;
+    padding-right: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

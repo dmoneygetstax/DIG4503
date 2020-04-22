@@ -1,6 +1,6 @@
 import React from 'react';
 import YearSearch from './components/YearSearch';
-import Title from'./components/Title';
+import TitleSearch from './components/TitleSearch';
 import styles from './styles.module.css';
 
 class App extends React.Component {
@@ -46,7 +46,7 @@ class App extends React.Component {
     return (
       <div>
         <YearSearch callback={this.setResultsTable} />
-        <Title />
+        <TitleSearch callback={this.setResultsTable} />
         <img className={styles.img} src="home_alone.png" alt="Home Alone" />
         {this.createResultsTable()}
       </div>
